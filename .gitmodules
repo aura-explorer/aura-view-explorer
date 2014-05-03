@@ -1,0 +1,6 @@
+[submodule "lib/aura-model"]
+	path = lib/aura-model
+	url = git@github.com:aura-explorer/aura-model.git
+[submodule "lib/aura-controller"]
+	path = lib/aura-controller
+	url = git@github.com:aura-explorer/aura-controller.git
