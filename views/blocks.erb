@@ -1,22 +1,29 @@
-<table>
+<table class="table blockchain-table">
 	<thead>
 		<tr>
-			<th>Height</th>
-			<th>Time</th>
-			<th>Num tx</th>
-			<th>Value out</th>
-			<th>Outstanding</th>
+			<th class="block-icon"></th>
+			<th></th>
+			<th><i class="fa fa-clock-o"></i></th>
+			<th><i class="fa fa-exchange"></i></th>
+			<th><i class="fa fa-bolt"></i></th>
 		</tr>
 	</thead>
 	<tbody>
 		<% blocks.each do |block| %>
 		<tr>
-			<td><%= block["block_height"] %></td>
-			<td><%= block["block_nTime"] %></td>
+			<td><img src="/static/img/block.svg" width="20" class="block-icon"><div class="block-line"></td>
+			<td>#<a href="/block/<%= block["block_height"] %>"><%= block["block_height"] %></a></td>
+			<td><abbr class="timeago" title="<%= block.time %>"><%= block.time %></abbr></td>
 			<td><%= block["block_num_tx"] %></td>
-			<td><%= block["block_value_out"] %></td>
-			<td><%= block["block_total_satoshis"] %></td>
+			<td><%= block.difficulty %></td>
 		</tr>
 		<% end %>
+		<tr>
+			<td><img src="/static/img/block.svg" width="20" height="11" class="block-icon"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
 	</tbody>
 </table>

@@ -1,0 +1,18 @@
+<section class="block_detail">
+	<h1>Block <%= block.block_height %></h1>
+	
+	<dl>
+		<dt>Hash</dt>
+		<dd><kbd><%= block.block_hash %></kbd></dd>
+		<dt>Time</dt>
+		<dd><abbr class="timeago" title="<%= block.time %>"><%= block.time %></abbr></dd>
+		<dt>Difficulty</dt>
+		<dd><%= block.difficulty %></dd>
+		<dt>Number of transactions</dt>
+		<dd><%= block.block_num_tx %></dd>
+	</dl>
+	
+	<section class="block_detail_transactions">
+		<h2>Transactions</h2>
+	</section>
+</section>

@@ -2,26 +2,21 @@
 <html>
 	<head>
 		<title>Abe front-end test</title>
+		
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="/static/css/main.css" rel="stylesheet">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	<body>
-		<h1>Abe front-end test</h1>
-		<p>
-			You're looking at a test for a new Abe (the popular blockchain explorer) front-end by <strong>icanprogram</strong>.
-			The problem with Abe is that it doesn't follow the KISS principle: it tries to be both a block analyzer and a web service (and also a template renderer and all the stuff that goes with that).
-			Because of this, Abe can become <strong>very</strong> slow.
-			The test on this server runs on the same hardware as <a href="http://fedoracha.in">fedoracha.in</a> and gives the same information.
-			I'll leave comparison of speed as an exercise to the reader :).
-		</p>
-		<p>
-			If you like what you see and you want to encourage me to work more on this, please bribe me:
-		<p>
-		<dl>
-			<dt>FedoraCoin</dt>
-			<dd>EfXJqTLTHfN1RxuVjrtPzHPsX9xEKvfBPP</dd>
-			<dt>Piggycoin</dt>
-			<dd>7KgdENaFnp1DnYY9hR63NxwgJQv1xoxNty</dd>
-		</dl>
+	<body class="container">
+		<img src="/static/img/fedoracoin.svg" class="blockchain-logo">
 		<%= yield %>
-		<p>Special thanks to wigitgetit, who paid for this server so I had a place to test.</p>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="/static/js/jquery.timeago.js"></script>
+		<script src="/static/js/timeago.js"></script>
+		<script src="/static/js/adjust-logo.js"></script>
 	</body>
 </html>

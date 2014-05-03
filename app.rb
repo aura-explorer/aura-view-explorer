@@ -13,5 +13,17 @@ module Aura
 			blocks = settings.chain_block_controller.get_last
 			erb :blocks, :locals => {:blocks => blocks}
 		end
+		
+		get '/block/:height' do
+			block = settings.chain_block_controller.get_by_height params[:height]
+			block = settings.chain_block_controller.get_by_hash params[:height] if block.nil?
+			
+			if block.nil?
+				status 404
+				"404"
+			else
+				erb :block, :locals => {:block => block}
+			end
+		end
 	end
 end

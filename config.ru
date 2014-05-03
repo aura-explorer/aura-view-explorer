@@ -3,6 +3,7 @@ require "sinatra"
 require "sinatra/reloader"
 require "mysql2"
 require "active_record"
+require "date"
 
 $LOAD_PATH.unshift(File.dirname(__FILE__) + "/")
 $LOAD_PATH.unshift(File.dirname(__FILE__) + "/lib/")

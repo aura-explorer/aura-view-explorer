@@ -1,0 +1,48 @@
+body{
+	padding-top: 10px;
+}
+
+.table {
+	margin-bottom: 0;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	border-top: none;
+}
+
+.table>thead>tr>th {
+	border-bottom: none;
+}
+
+.blockchain-logo {
+	width: 20%;
+	margin-left: -8.4%;
+	margin-bottom: -56px;
+	z-index: 1;
+	position: relative;
+}
+
+.table>thead>tr>th.block-icon {
+	width: 20px;
+}
+
+img.block-icon {
+	vertical-align: bottom;
+}
+
+.table>tbody>tr:last-child>td {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.block-line {
+	height: 10px;
+	border-left: 1px solid #b5c2cd;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 3px;
+}
+
+section.block_detail {
+	margin-top: 50px;
+}
