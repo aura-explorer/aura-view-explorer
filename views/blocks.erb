@@ -1,0 +1,22 @@
+<table>
+	<thead>
+		<tr>
+			<th>Height</th>
+			<th>Time</th>
+			<th>Num tx</th>
+			<th>Value out</th>
+			<th>Outstanding</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% blocks.each do |block| %>
+		<tr>
+			<td><%= block["block_height"] %></td>
+			<td><%= block["block_nTime"] %></td>
+			<td><%= block["block_num_tx"] %></td>
+			<td><%= block["block_value_out"] %></td>
+			<td><%= block["block_total_satoshis"] %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
